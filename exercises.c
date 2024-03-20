@@ -114,7 +114,7 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 
 int parentesisBalanceados(char *cadena) {
   Stack * P4G = create_stack();
-  for (int i = 0 ; i < cadena[i] != '\0' ; i++){
+  for (int i = 0 ; cadena[i] != '\0' ; i++){
       if (((strcmp(&cadena[i], "(") == 0)) || strcmp(&cadena[i], "[") == 0 || strcmp(&cadena[i], "{") == 0){
         push(P4G, &cadena[i]);
       }
