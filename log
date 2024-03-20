@@ -28,3 +28,17 @@ Wed 20 Mar 2024 05:11:38 PM UTC:
  tests:  4|1
 total_score: 50/70
 94ae7a2
+Wed 20 Mar 2024 05:25:58 PM UTC: 
+ exercises.c | 24 +++++++++++++++++++++++-
+ 1 file changed, 23 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:117:22: error: suggest parentheses around comparison in operand of ‘!=’ [-Werror=parentheses]
+  117 |   for (int i = 0 ; i < cadena[i] != '\0' ; i++){
+      |                    ~~^~~~~~~~~~~
+exercises.c:139:1: error: control reaches end of non-void function [-Werror=return-type]
+  139 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+7ad91e2
