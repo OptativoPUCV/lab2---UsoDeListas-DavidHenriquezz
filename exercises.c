@@ -121,21 +121,15 @@ int parentesisBalanceados(char *cadena) {
       else{
         char * comparar = top(P4G);
         if (top(P4G) != NULL){
-          if (cadena[i] == ')' && *comparar == '('){
-            pop(P4G);
-        }
-        else if (cadena[i] == ']' && *comparar == '['){
-          pop(P4G);
-        }
-        else if (cadena[i] == '{' && *comparar == '}'){
-          pop(P4G);
-        }
+          if (cadena[i] == ')' && *comparar == '(') pop(P4G);
+        else if (cadena[i] == ']' && *comparar == '[') pop(P4G);
+        else if (cadena[i] == '{' && *comparar == '}') pop(P4G);
       }
     }
-    if (top(P4G) == NULL){
-      return 1;
-    }
-    else return 0;
   }
+  if (top(P4G) == NULL){
+    return 1;
+  }
+  else return 0;
 }
 
