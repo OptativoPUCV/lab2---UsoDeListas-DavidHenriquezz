@@ -53,3 +53,23 @@ exercises.c:139:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 5cdde32
+Fri 22 Mar 2024 12:07:31 PM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:123:44: error: comparison between pointer and integer [-Werror]
+  123 |           if (cadena[i] == ')' && top(P4G) == '('){
+      |                                            ^~
+exercises.c:126:47: error: comparison between pointer and integer [-Werror]
+  126 |         else if (cadena[i] == ']' && top(P4G) == '['){
+      |                                               ^~
+exercises.c:129:47: error: comparison between pointer and integer [-Werror]
+  129 |         else if (cadena[i] == '{' && top(P4G) == '}'){
+      |                                               ^~
+exercises.c:139:1: error: control reaches end of non-void function [-Werror=return-type]
+  139 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+019e039
