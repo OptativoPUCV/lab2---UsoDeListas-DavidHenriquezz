@@ -119,11 +119,10 @@ int parentesisBalanceados(char *cadena) {
         push(P4G, &cadena[i]);
       }
       else{
-        char * comparar = top(P4G);
         if (top(P4G) != NULL){
-          if (cadena[i] == ')' && *comparar == '(') pop(P4G);
-        else if (cadena[i] == ']' && *comparar == '[') pop(P4G);
-        else if (cadena[i] == '}' && *comparar == '{') pop(P4G);
+          if (cadena[i] == ')' && *(char*)top(P4G) == '(') pop(P4G);
+          else if (cadena[i] == ']' && *(char*)top(P4G) == '[') pop(P4G);
+          else if (cadena[i] == '}' && *(char*)top(P4G) == '{') pop(P4G);
       }
     }
   }
