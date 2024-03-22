@@ -120,11 +120,11 @@ int parentesisBalanceados(char *cadena) {
       }
       else{
         char * comparar = top(P4G);
-        if (top(P4G) != NULL){
+        //if (top(P4G) != NULL){
           if (cadena[i] == ')' && *comparar == '(') pop(P4G);
         else if (cadena[i] == ']' && *comparar == '[') pop(P4G);
         else if (cadena[i] == '{' && *comparar == '}') pop(P4G);
-      }
+      //}
     }
   }
   if (top(P4G) == NULL){
